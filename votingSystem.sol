@@ -26,7 +26,7 @@ contract VotingSystem {
 
     //Modifiers - functions can be called only if they are modifiers and return value is bool
     modifier onlyChair() {
-        require(msg.sender == chairperson, "Only Chair");
+        require(msg.sender == chairperson, "Only Chairperson");
         _;
     }
 
